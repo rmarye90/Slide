@@ -1,0 +1,168 @@
+<section class="slide_1" data-auto-animate>
+  <div class="root">
+    <div data-id="box" class="container-step1">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+    <div class="code">
+      <pre data-id="code-animation">
+        <code data-trim-line-numbers>		
+          .container {
+            width: 400px;
+            height: 400px;
+            border: 2px solid orange;
+          }
+        </code>
+      </pre>
+    </div>
+  </div>
+</section>
+<section class="slide_1" data-auto-animate>
+  <div class="root">
+    <div data-id="box" class="container-step2">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+    <div class="code">
+      <pre data-id="code-animation">
+        <code data-trim-line-numbers>
+          .container {
+            display: grid;
+            gap: 2px;
+            width: 400px;
+            height: 400px;
+            border: 2px solid orange;
+          }
+        </code>
+      </pre>
+    </div>
+  </div>
+</section>
+<section class="slide_1" data-auto-animate>
+  <div class="root">
+    <div data-id="box" class="container-step3">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+    <pre data-id="code-animation">
+      <code data-trim-line-numbers>
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          gap: 2px;
+          width: 400px;
+          height: 400px;
+          border: 2px solid orange;
+        }
+      </code>
+    </pre>
+  </div>
+</section>
+<section class="slide_1" data-auto-animate>
+  <div class="root">
+    <div data-id="box" class="container-step4">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+    <pre data-id="code-animation">
+      <code data-trim-line-numbers>
+        .container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: 1fr 1fr 1fr;
+          gap: 2px;
+          width: 400px;
+          height: 400px;
+          border: 2px solid orange;
+        }
+      </code>
+    </pre>
+  </div>
+</section>
+
+<style>
+  .slide_1 .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid orange;
+  }
+
+  .slide_1 .root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .slide_1 .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: teal;
+    border: 2px solid #64ccc5;
+  }
+
+  .slide_1 .item:nth-child(1) {
+    background-color: orange;
+  }
+
+  .slide_1 .code {
+    width: 100%;
+    text-align: start;
+  }
+
+  .slide_1 .container-step1 {
+    width: 400px;
+    height: 400px;
+    border: 2px solid orange;
+  }
+
+  .slide_1 .container-step2 {
+    display: grid;
+    gap: 2px;
+    width: 400px;
+    height: 400px;
+    border: 2px solid orange;
+  }
+
+  .slide_1 .container-step3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2px;
+    width: 400px;
+    height: 400px;
+    border: 2px solid orange;
+  }
+
+  .slide_1 .container-step4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2px;
+    width: 400px;
+    height: 400px;
+    border: 2px solid orange;
+  }
+</style>
+
+<style>
+  .slide_1 h1 {
+    color: red;
+  }
+</style>
