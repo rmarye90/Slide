@@ -1,0 +1,62 @@
+<section class="slide_4">
+  <h1>SPAN ?</h1>
+</section>
+<section class="slide_4" data-auto-animate>
+  <div class="root">
+    <div data-id="box" class="container-step1">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+    <div class="code">
+      <pre data-id="code-animation">
+            <code data-trim data-line-numbers="1|2">
+                .item:nth-child(2) {
+                    grid-column: 1 / span 2;
+                }
+            </code>
+          </pre>
+    </div>
+  </div>
+</section>
+
+<style>
+  .slide_4 .root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .slide_4 .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: teal;
+    border: 2px solid #64ccc5;
+  }
+  .slide_4 .code {
+    width: 100%;
+    text-align: start;
+  }
+  .slide_4 .container-step1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid orange;
+  }
+  .slide_4 .container-step1 .item:nth-child(1) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 1;
+    background-color: orange;
+  }
+  .slide_4 .container-step1 .item:nth-child(2) {
+    grid-column: 1 / span 2;
+    background-color: violet;
+  }
+</style>

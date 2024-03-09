@@ -1,0 +1,71 @@
+<section class="slide_7" data-auto-animate="">
+    <h1>JUSTIFY-CONTENT ET AUTRES...</h1>
+</section>
+<section data-auto-animate="">
+    <h1>JUSTIFY-CONTENT ET AUTRES...</h1>
+    <h4>(placement de la grille sur la page)</h4>
+</section>
+<section class="slide_7" data-auto-animate>
+    <div class="root">
+        <div data-id="box" class="container-step1">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+          </div>
+      <div class="code">
+        <pre data-id="code-animation">
+              <code data-trim data-line-numbers="5">
+                .container {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                    place-content: center;
+                    gap: 2px;
+                }
+              </code>
+            </pre>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .slide_7 .root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .slide_7 .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: teal;
+    border: 2px solid #64ccc5;
+  }
+
+  .slide_7 .code {
+    width: 100%;
+    text-align: start;
+  }
+
+  .slide_7 .container-step1 {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px)
+    gap: 2px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid orange;
+    place-content: center;
+  }
+
+  </style>

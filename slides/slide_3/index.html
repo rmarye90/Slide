@@ -1,0 +1,90 @@
+<section class="slide_3">
+  <h1>SUPERPOSITION ?</h1>
+</section>
+<section class="slide_3" data-auto-animate>
+  <div class="root">
+    <div data-id="box" class="container-step1">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+    <div class="code">
+      <pre data-id="code-animation">
+          <code data-trim data-line-numbers="1|2,3">
+            .item:nth-child(1) {
+                grid-column: 1 / -1;
+                grid-row: 1 / 1;
+            }
+          </code>
+        </pre>
+    </div>
+  </div>
+</section>
+<section class="slide_3" data-auto-animate>
+  <div class="root">
+    <div data-id="box" class="container-step2">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+    <div class="code">
+      <pre data-id="code-animation">
+          <code data-trim data-line-numbers="5|6,7">
+            .item:nth-child(1) {
+                grid-column: 1 / -1;
+                grid-row: 1 / 1;
+            }
+            .item:nth-child(3) {
+                grid-column: 3 / -1;
+                grid-row: 1 / 2;
+            }
+          </code>
+        </pre>
+    </div>
+  </div>
+</section>
+
+<style>
+  .slide_3 .root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .slide_3 .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: teal;
+    border: 2px solid #64ccc5;
+  }
+  .slide_3 .code {
+    width: 100%;
+    text-align: start;
+  }
+  .slide_3 .container-step1,
+  .slide_3 .container-step2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid orange;
+  }
+  .slide_3 .container-step1 .item:nth-child(1),
+  .slide_3 .container-step2 .item:nth-child(1) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 1;
+    background-color: orange;
+  }
+  .slide_3 .container-step2 .item:nth-child(3) {
+    grid-column: 3 / -1;
+    grid-row: 1 / 2;
+    background-color: violet;
+  }
+</style>
