@@ -20,6 +20,89 @@
     </div>
     <div class="code">
       <pre data-id="code-animation">
+              <code data-trim data-line-numbers>
+                .container {
+                    display: grid;
+                    grid-template-columns: repeat(3, 50px);
+                    grid-template-rows: repeat(3, 50px);
+                    gap: 2px;
+                }
+              </code>
+            </pre>
+    </div>
+  </div>
+</section>
+<section class="slide_7" data-auto-animate>
+  <div class="root">
+    <div data-id="box" class="container-step2">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+    </div>
+    <div class="code">
+      <pre data-id="code-animation">
+              <code data-trim data-line-numbers="5">
+                .container {
+                    display: grid;
+                    grid-template-columns: repeat(3, 50px);
+                    grid-template-rows: repeat(3, 50px);
+                    justify-content: center;
+                    gap: 2px;
+                }
+              </code>
+            </pre>
+    </div>
+  </div>
+</section>
+<section class="slide_7" data-auto-animate>
+  <div class="root">
+    <div data-id="box" class="container-step3">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+    </div>
+    <div class="code">
+      <pre data-id="code-animation">
+              <code data-trim data-line-numbers="5">
+                .container {
+                    display: grid;
+                    grid-template-columns: repeat(3, 50px);
+                    grid-template-rows: repeat(3, 50px);
+                    align-content: center; 
+                    gap: 2px;
+                }
+              </code>
+            </pre>
+    </div>
+  </div>
+</section>
+<section class="slide_7" data-auto-animate>
+  <div class="root">
+    <div data-id="box" class="container-step4">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+    </div>
+    <div class="code">
+      <pre data-id="code-animation">
               <code data-trim data-line-numbers="5">
                 .container {
                     display: grid;
@@ -35,7 +118,7 @@
 </section>
 
 <style>
-    .slide_7 .root {
+  .slide_7 .root {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,6 +141,38 @@
   }
 
   .slide_7 .container-step1 {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    gap: 2px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid orange;
+  }
+
+  .slide_7 .container-step2 {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    gap: 2px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid orange;
+    justify-content: center;
+  }
+
+  .slide_7 .container-step3 {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    gap: 2px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid orange;
+    align-content: center;
+  }
+
+  .slide_7 .container-step4 {
     display: grid;
     grid-template-columns: repeat(3, 50px);
     grid-template-rows: repeat(3, 50px);
