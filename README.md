@@ -1,4 +1,4 @@
-# Guide to Creating Slides with Reveal.js
+# Guide to Creating Slides with Reveal.js ;)
 
 This framework allows you to easily create interactive presentations using Reveal.js. With a simplified project structure, you can add new slides by creating individual files in the `slides` folder.
 
